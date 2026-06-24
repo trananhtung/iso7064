@@ -1,0 +1,25 @@
+[package]
+name = "iso7064"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.81"
+description = "ISO 7064 MOD 97-10 check-character computation and validation (used by LEI, IBAN, ...). A faithful port of the iso-7064 npm package. Zero deps, no_std."
+documentation = "https://docs.rs/iso7064"
+repository = "https://github.com/trananhtung/iso7064"
+homepage = "https://github.com/trananhtung/iso7064"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["iso7064", "checksum", "mod97", "lei", "iban"]
+categories = ["algorithms", "no-std"]
+authors = ["trananhtung"]
+exclude = ["/.github", "/.gitignore"]
+
+[dependencies]
+
+[lints.rust]
+missing_docs = "warn"
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
